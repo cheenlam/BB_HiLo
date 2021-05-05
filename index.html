@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/gamebox.css">
+    <title>Document</title>
+    
+    <style id="wheelran">
+        @keyframes wheel-on {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(720deg);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="gamebox">
+        <!-- 葉子 -->
+        <div class="leaf_1"></div>
+        <div class="leaf_2"></div>
+        <div class="leaf_3"></div>
+
+        <!-- 音樂圖標 -->
+        <div class="music music-stop"></div>
+
+        <!-- 左方轉輪 -->
+        <div class="wheel_left">
+            <div class="wheel"></div>
+            <div class="pointer"></div>
+            <div class="face face-look"></div>
+        </div>
+        <!-- 右方轉輪 -->
+        <div class="wheel_right">
+            <div class="wheel"></div>
+            <div class="pointer"></div>
+            <div class="face face-look"></div>
+            <div class="spin spin-open"></div>
+        </div>
+
+        <!-- 賽果 -->
+        <div class="result">
+            <p class="result_title">開獎結果</p>
+            <p class="result_numero">No. <tt>202004131378</tt></p>
+            <span class="result_left result-10"></span>
+            <span class="result_right result-10"></span>
+            <span class="result_total">20</span>
+            <span class="result_hl result_height">高</span>
+            <span class="result_oe result_even">雙</span>
+        </div>
+    </div>
+
+
+    <!-- 功能測試按鈕 -->
+    <div class="testBtn" id="testBtn">
+        <div>
+            <div>
+                <h5>左方轉輪</h5>
+                <button id="btn1">指針閃爍</button>
+                <button id="btn3">閉眼</button>
+                <button id="btn4">睜眼</button>
+                <button id="btn5">看</button>
+                <button id="btn9">轉輪旋轉</button>
+            </div>
+            <div>
+                <h5>右方轉輪</h5>
+                <button id="btn2">指針閃爍</button>
+                <button id="btn6">閉眼</button>
+                <button id="btn7">睜眼</button>
+                <button id="btn8">看</button>
+                <button id="btn10">轉輪旋轉</button>
+                <hr>
+                <button id="btn11">SPIN關</button>
+                <button id="btn12">SPIN閃爍</button>
+                <button id="btn13">SPIN開</button>
+            </div>
+        </div>
+        <div>
+            <div><button id="btn14">賽果視窗</button></div>
+            <div id="btn_radio">
+                <label>
+                    <input type="radio" name="result" id="r1">
+                    <span>左賽果</span>
+                </label>
+                <label>
+                    <input type="radio" name="result" id="r2">
+                    <span>右賽果</span>
+                </label> 
+            </div>
+        </div>
+        
+        <div id="btn_nb">
+            <div>
+                <button id="btn15">賽果號碼(1)</button>
+                <button id="btn16">賽果號碼(2)</button>
+                <button id="btn17">賽果號碼(3)</button>
+                <button id="btn18">賽果號碼(4)</button>
+                <button id="btn19">賽果號碼(5)</button>
+            </div> 
+            <div>
+                <button id="btn20">賽果號碼(6)</button>
+                <button id="btn21">賽果號碼(7)</button>
+                <button id="btn22">賽果號碼(8)</button>
+                <button id="btn23">賽果號碼(9)</button>
+                <button id="btn24">賽果號碼(10)</button>
+            </div> 
+        </div>
+    </div>
+
+    <script src="script/jquery-3.4.1.min.js"></script>
+    <script src="script/game.js"></script>    
+</body>
+
+</html>
